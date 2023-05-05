@@ -20,4 +20,4 @@ int main(void)
   /* ...so that this prints 98\n */
   printf("a[2] = %d\n", a[2]);
   return (0);
-sh: 1: q: not found
+}
