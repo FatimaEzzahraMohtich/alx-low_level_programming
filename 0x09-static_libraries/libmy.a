@@ -1,4 +1,22 @@
 !<arch>
+0-isupper.c/    0           0     0     644     187       `
+#include "main.h"
+
+/**
+ * _isupper - uppercase letters
+ * @c: char to check
+ *
+ * Return: 0 or 1
+ */
+
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
+}
+
 0-memset.c/     0           0     0     644     371       `
 #include "main.h"
 /**
@@ -22,7 +40,7 @@ char *_memset(char *s, char b, unsigned int n)
 }
 
 
-0-putchar.c/    0           0     0     644     249       `
+0-putchar.c/    0           0     0     644     248       `
 #include <unistd.h>
 
 
@@ -37,9 +55,7 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
-
-0-strcat.c/     0           0     0     644     337       `
+0-strcat.c/     0           0     0     644     336       `
 #include "main.h"
 /**
  * _strcat - concatenates two strings
@@ -69,8 +85,6 @@ char *_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-
-
 100-atoi.c/     0           0     0     644     427       `
 #include "main.h"
 
@@ -102,7 +116,7 @@ int _atoi(char *s)
 	return (res);
 }
 
-1-isdigit.c/    0           0     0     644     198       `
+1-isdigit.c/    0           0     0     644     197       `
 #include "main.h"
 
 /**
@@ -115,7 +129,7 @@ int _isdigit(int c)
 	return (c >= '0' && c <= '9');
 }
 
-1-memcpy.c/     0           0     0     644     358       `
+1-memcpy.c/     0           0     0     644     357       `
 #include "main.h"
 /**
  *_memcpy - a function that copies memory area
@@ -138,7 +152,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-1-strncat.c/    0           0     0     644     403       `
+1-strncat.c/    0           0     0     644     402       `
 #include "main.h"
 /**
  * _strncat - concatenate two strings
@@ -169,9 +183,7 @@ char *_strncat(char *dest, char *src, int n)
 	dest[i] = '\0';
 	return (dest);
 }
-
-
-2-strchr.c/     0           0     0     644     259       `
+2-strchr.c/     0           0     0     644     258       `
 #include "main.h"
 #include <stddef.h>
 
@@ -192,9 +204,7 @@ char *_strchr(char *s, char c)
 	}
 	return (0);
 }
-
-
-2-strlen.c/     0           0     0     644     207       `
+2-strlen.c/     0           0     0     644     206       `
 #include "main.h"
 /**
  * _strlen - returns the length of a string
@@ -213,9 +223,7 @@ int _strlen(char *s)
 
 	return (longi);
 }
-
-
-2-strncpy.c/    0           0     0     644     330       `
+2-strncpy.c/    0           0     0     644     331       `
 #include "main.h"
 /**
  * _strncpy - copy a string
@@ -243,6 +251,8 @@ char *_strncpy(char *dest, char *src, int n)
 
 	return (dest);
 }
+
+
 3-islower.c/    0           0     0     644     203       `
 #include "main.h"
 
@@ -257,7 +267,7 @@ int _islower(int c)
 }
 
 
-3-puts.c/       0           0     0     644     206       `
+3-puts.c/       0           0     0     644     205       `
 #include "main.h"
 /**
  * _puts - prints a string, followed by a new line, to stdout
@@ -272,7 +282,7 @@ void _puts(char *str)
 		_putchar('\n');
 }
 
-3-strcmp.c/     0           0     0     644     304       `
+3-strcmp.c/     0           0     0     644     305       `
 #include "main.h"
 /**
  * _strcmp - compare string values
@@ -296,6 +306,8 @@ int _strcmp(char *s1, char *s2)
 	}
 	return (0);
 }
+
+
 3-strspn.c/     0           0     0     644     372       `
 #include "main.h"
 /**
@@ -339,7 +351,7 @@ int _isalpha(int c)
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
 
-4-strpbrk.c/    0           0     0     644     279       `
+4-strpbrk.c/    0           0     0     644     280       `
 #include "main.h"
 /**
  * _strpbrk - Entry point
@@ -364,7 +376,7 @@ char *_strpbrk(char *s, char *accept)
 return ('\0');
 }
 
-5-strstr.c/     0           0     0     644     368       `
+5-strstr.c/     0           0     0     644     367       `
 #include "main.h"
 /**
  * _strstr - Entry point
@@ -392,7 +404,7 @@ char *_strstr(char *haystack, char *needle)
 	return (0);
 }
 
-6-abs.c/        0           0     0     644     208       `
+6-abs.c/        0           0     0     644     207       `
 #include "main.h"
 
 /**
@@ -409,7 +421,7 @@ int _abs(int n)
 	return (-n);
 }
 
-9-strcpy.c/     0           0     0     644     342       `
+9-strcpy.c/     0           0     0     644     341       `
 #include "main.h"
 
 /**
